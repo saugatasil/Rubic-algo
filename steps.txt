@@ -1,0 +1,63 @@
+Rubik Cube in 5 steps
+
+                 *    *    *
+                 *    *    *
+                 *    *    *
+*    *    *    *    *    *    *    *    *    *    *    *
+*    *    *    *    *    *    *    *    *    *    *    *
+*    *    *    *    *    *    *    *    *    *    *    *
+                 *    *    *
+                 *    *    *
+                 *    *    *
+
+1.  set up cross on point to yellow colour : 
+     x    *    x
+     *    *     *
+     x    *    x
+
+2. float to white pointer side per colour step with two middle layer colour
+                     *
+                     *
+               x    *    x
+    *    *    *    *    *    *    *
+               *    x    *
+                     *
+                     *
+then white portion keep to down position and yellow is top
+
+3.  complete white layer -  
+    find three top layer corner colour where white have to one and which are mathches both side angle. like front and right colour as well as be there.
+*remember that - don't choose white corner pics which is on the top layers
+   "H"  Algorithem : 
+     a. only for FRONT & LEFT
+                        U' L' U L
+     b. only for FRONT & RIGHT
+                        U R U' R'
+
+4.   Top Algorithem for CROSS "+" - 
+      continue until create a "+"
+                     F (R U R' U') F'
+       Conditions :
+       i) If match two side as well as Right and Back which  : R U R' U R U2 R'
+       ii) If match two side as well as Front and Back :            R U R' U R U2 R'
+
+5. All corner uncorrect pic change and stop when matche both corner side colour with yellow color show :   
+                     U R U' L' U R' U' L   
+
+6. Single corner correct pic change and stop when yello come to top : 
+                    R' D' R D R' D' R D  
+
+ 
+ 
+Link of full tutorial : - 
+https://youtu.be/OCSrLEINY_Q 
+
+Algorithem :- 
+https://docs.google.com/document/d/1FSbrGGn48rtZcOekGKZcrFOMyh0ufkjZRfllysBO5AI/edit
+
+
+Short logic :-
+F (R U R' U') F' - top yellow "+"
+R U R' U R U2 R' - all side middle match
+U R U' L' U R' U' L   - frnt & Bck  / right & bck
+R' D' R D R' D' R D - corner setup with top
